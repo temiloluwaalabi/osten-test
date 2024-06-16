@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff; /* Light gray background */
+}
+
+/* Navigation */
+header {
+  background-color: transparent;
+  /* Remove the background for the navbar */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Remove the background for the navbar */
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust the logo height as needed */
+}
+
+.nav-link {
+  color: white;
+}
+.main-cont {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+/* Hero Section */
+#hero {
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ff8000,
+    #ffff00,
+    #80ff00,
+    #00ff00
+  );
+  /* Crazy gradient! */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Adjust padding as needed */
+}
+
+#hero h1 {
+  color: white; /* White text on gradient */
+}
+
+#hero h1 span {
+  display: block; /* Force each span onto a new line */
+  text-align: center;
+}
+
+/* Benefits Section */
+.benefits .fa {
+  color: #333; /* Dark gray icon color */
+}
+
+/* Comparison Section */
+.comparison img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Register Section */
+.register form {
+  margin: 0 auto; /* Center the form */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Dark green footer */
+}
+
+footer a {
+  color: #fff; /* White text color */
+}
+
+footer a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #fff; /* Keep white text on hover */
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-500 via-emerald-300 to-lime-400 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+/* Styling for the carousel-caption (if you're using captions) */
+#comparisonCarousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/* ... your existing CSS ... */
+
+/* ... your existing CSS ... */
+
+#registrationForm {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registrationForm .form-group {
+  width: 100%; /* Make form groups fill the width */
+  margin-bottom: 1rem; /* Add space between form groups */
+}
+
+#registrationForm .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+}
+
+#registrationForm button {
+  border-radius: 0.5rem;
+}
+
+#registrationForm label {
+  display: block; /* Make labels appear above inputs */
+  margin-bottom: 0.5rem;
+}
+
+.menu-div {
+  background-color: red !important;
+}
+.menu-container {
+  background-color: red !important;
+}
+
+/* Optional custom styles */
+.menu-slide-enter-active {
+  transition: transform 0.3s ease;
+}
+.menu-slide-enter-from {
+  transform: translateX(100%);
+}
+.menu-slide-enter-to {
+  transform: translateX(0);
+}
+.menu-slide-leave-active {
+  transition: transform 0.3s ease;
+}
+.menu-slide-leave-from {
+  transform: translateX(0);
+}
+.menu-slide-leave-to {
+  transform: translateX(100%);
+}

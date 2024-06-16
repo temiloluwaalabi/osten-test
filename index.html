@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osten's Eco-Friendly Cooking Event</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzG0sAfKLlBqAV4c6TmodD0+m7kkh+40f51QtW+5bA7cXnPcQ/hg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      class="bg-transparent flex flex-col px-2 lg:px-10 py-4 h-full lg:h-screen"
+    >
+      <div
+        class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"
+      ></div>
+      <div class="header-section">
+        <nav class="w-full flex relative items-center justify-between">
+          <a class="navbar-brand" href="#">
+            <img src="images/Osten-Logo-PNG.png" alt="Osten Logo" height="40" />
+          </a>
+          <div
+            class="hidden lg:flex text-black items-center justify-between"
+            id="mainNav"
+          >
+            <ul class="flex text-black items-center justify-between ml-auto">
+              <li class="nav-item">
+                <a class="nav-link !text-black" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link !text-black" href="#benefits">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link !text-black" href="#traditional"
+                  >Comparison</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link !text-black" href="#register">Register</a>
+              </li>
+            </ul>
+            <button class="btn bg-[#047000] text-white ml-3">
+              Reserve Your Spot
+            </button>
+          </div>
+          <div class="flex items-center lg:hidden cursor-pointer" id="">
+            <div id="hamburger" class="">
+              <i class="fa-solid text-2xl fa-bars"></i>
+            </div>
+            <div class="hidden" id="xmark">
+              <i class="fa-solid text-2xl fa-xmark"></i>
+            </div>
+          </div>
+          <div
+            class="text-black hidden absolute top-0 right-0 bg-green-200 mt-12 p-3 rounded-md items-center justify-between"
+            id="mobile-menu"
+          >
+            <ul
+              class="flex flex-col text-black items-end gap-2 justify-between ml-auto"
+            >
+              <li
+                class="nav-item group hover:bg-[#047000] px-2 py-1 rounded-md"
+              >
+                <a
+                  class="nav-link group-hover:!text-white !text-black"
+                  href="#hero"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="nav-item group hover:bg-[#047000] px-2 py-1 rounded-md"
+              >
+                <a
+                  class="nav-link group-hover:!text-white !text-black"
+                  href="#benefits"
+                  >Benefits</a
+                >
+              </li>
+              <li
+                class="nav-item group hover:bg-[#047000] px-2 py-1 rounded-md"
+              >
+                <a
+                  class="nav-link group-hover:!text-white !text-black"
+                  href="#traditional"
+                  >Comparison</a
+                >
+              </li>
+              <li
+                class="nav-item group hover:bg-[#047000] px-2 py-1 rounded-md"
+              >
+                <a
+                  class="nav-link group-hover:!text-white !text-black"
+                  href="#register"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <button class="btn bg-[#047000] mt-2 text-white ml-3">
+              <a
+                href="#register"
+                class="!no-underline text-white hover:text-white hover:no-underline"
+                >Reserve Your Spot</a
+              >
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="hero pb-2 px-[10px] md:px-[50px] lg:px-[120px] flex pt-14 md:pt-24 lg:pt-40"
+      >
+        <div class="w-full">
+          <div class="flex flex-col w-full items-center">
+            <div class="flex flex-col items-center gap-2">
+              <!-- <h2 class="display-4 font-weight-bold mb-4">
+                Cook Clean, Cook Green, Cook Happy
+              </h2> -->
+              <p
+                class="rounded-[100px] px-4 py-1 text-xs md:text-sm bg-green-200 w-fit"
+              >
+                <i class="fa-solid fa-fire"></i>
+                Cooking Revolution
+              </p>
+              <h1 class="text-center text-3xl lg:text-6xl font-bold mb-4">
+                <span class="">Cooking Revolution</span><br />
+                <span class="green_gradient" id="typing-effect"
+                  >Embrace the Green Flame</span
+                >
+              </h1>
+              <p
+                class="max-w-prose text-center text-sm md:text-sm lg:text-base"
+              >
+                Join us for Osten's Eco-Friendly Cooking Event and learn how to
+                create delicious and healthy meals while reducing your
+                environmental impact. Discover the benefits of cooking gas and
+                explore innovative techniques to elevate your culinary skills.
+              </p>
+              <div>
+                <button
+                  class="rounded-md px-2 py-1 mt-1 mx-2 bg-[#047000] text-white"
+                >
+                  <a
+                    href="#register"
+                    class="!no-underline text-white hover:text-white hover:no-underline"
+                    >Register Now!</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 mmd:grid-cols-3 w-full mt-4 gap-4">
+              <div class="border p-2 rounded-md">
+                <p class="font-bold">Date:</p>
+                <p class="text-xs lg:text-sm">September 24, 2023</p>
+              </div>
+              <div class="border p-2 rounded-md">
+                <p class="font-bold">Time:</p>
+                <p class="text-xs lg:text-sm">10:00 AM - 4:00 PM</p>
+              </div>
+              <div class="border p-2 rounded-md">
+                <p class="font-bold">Location:</p>
+                <p class="text-xs lg:text-sm">
+                  Osten's Culinary Center, 123 Main Street, Cityville
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="px-[10px] md:px-[50px] lg:px-[120px]">
+      <section
+        class="bg-green-200/20 mt-3 lg:mt-0 rounded-lg p-4 py-8 flex flex-col gap-6"
+        id="benefits"
+      >
+        <div class="flex flex-col gap-2 lg:gap-3 justify-between text-black">
+          <h3 class="text-xl lg:text-4xl max-w-prose font-weight-bold">
+            Benefits of Cooking <br />
+            Gas: advantages
+          </h3>
+          <div class="flex flex-col gap-2 lg:gap-4 items-start">
+            <p class="text-sm lg:text-base">
+              Cooking gas produces significantly fewer emissions<br />
+              than firewood or traditional stoves.
+            </p>
+            <!-- <button class="bg-[#047000] text-white p-2 rounded-md">
+              Get Started
+            </button> -->
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div
+            class="text-center bg-white rounded-md p-3 flex flex-col gap-3 justify-start items-center"
+          >
+            <span class="bg-[#047000] rounded-[50%] p-2">
+              <i class="fa-solid fa-money-bill text-white"></i>
+            </span>
+            <div class="text-black">
+              <p class="font-weight-bold">Save Money on Cooking Costs</p>
+              <p class="text-xs lg:text-sm">
+                Cooking gas can be more efficient and cost-effective in the long
+                run.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-center bg-[#047000] rounded-md p-3 flex flex-col gap-3 justify-start items-center"
+          >
+            <span class="bg-white rounded-[50%] p-2">
+              <i class="fa-solid fa-leaf"></i>
+            </span>
+            <div class="text-white">
+              <p class="font-weight-bold text-white">
+                Reduce Your Carbon Footprint
+              </p>
+              <p class="text-[#e2e2e2] text-xs lg:text-sm">
+                Cooking gas produces significantly fewer emissions than firewood
+                or traditional stoves.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-center bg-white rounded-md p-3 flex flex-col gap-3 justify-start items-center"
+          >
+            <span class="bg-[#047000] rounded-[50%] p-2">
+              <i class="fa-solid fa-utensils text-white"></i>
+            </span>
+            <div class="text-black">
+              <p class="font-weight-bold">Learn New Techniques</p>
+              <p class="text-xs lg:text-sm">
+                Discover innovative cooking techniques and explore new flavors
+                with gas cooking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-20 grid grid-cols-1 lg:grid-cols-2 gap-4 px-0 lg:px-10"
+        id="traditional"
+      >
+        <div class="flex flex-col gap-4">
+          <h5 class="text-lg font-bold">Cooking Gas vs. Traditional Methods</h5>
+          <!-- <p class="rounded-[100px] px-4 py-1 mb-4 text-sm bg-green-200 w-fit">
+            <i class="fa-solid fa-fire"></i>
+            Benefits
+          </p> -->
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2 border-l-4 border-l-[#047000] pl-2">
+              <h4 class="text-base font-bold">Cost Effective</h4>
+              <p class="max-w-prose text-sm">
+                Cooking gas is an economical solution that saves you money
+                without sacrificing quality. Its precise temperature control
+                allows you to cook efficiently and confidently, ensuring perfect
+                results every time. Plus, it's a greener choice for the
+                environment.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 border-l-4 border-l-[#047000] pl-2">
+              <h4 class="text-base font-bold">Precise Temperature Control</h4>
+              <p class="max-w-prose text-sm">
+                Experience the power of precise temperature control with cooking
+                gas, empowering you to create culinary masterpieces. It's a
+                cost-effective and eco-friendly way to elevate your cooking,
+                saving you money and reducing your environmental impact.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 border-l-4 border-l-[#047000] pl-2">
+              <h4 class="text-base font-bold">Eco friendly and sustainable</h4>
+              <p class="max-w-prose text-sm">
+                Cooking gas offers a sustainable advantage, reducing your
+                environmental impact. It's also cost-effective, making it a
+                smart choice for your budget. And with precise temperature
+                control, you can unlock culinary mastery and create delicious
+                meals with ease.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-start lg:justify-end">
+          <img
+            src="images/hero-three.jpeg"
+            alt=""
+            height=""
+            class="rounded-lg h-full object-cover w-full mt-2 lg:mt-0 lg:w-[80%]"
+          />
+        </div>
+      </section>
+
+      <section
+        id="register"
+        class="register py-2 mb-4 lg:mb-10 flex items-center justify-center"
+      >
+        <div class="w-full lg:w-[600px]">
+          <h3 class="text-center text-2xl font-weight-bold mb-4">
+            Register for the Event
+          </h3>
+          <form class="" id="registrationForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="form-group mb-2">
+                <label for="firstName">First Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-group mb-2">
+                <label for="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="form-group flex flex-col mb-2">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group mb-2">
+                <label for="phone">Phone Number:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col mb-2">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="Your message"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn bg-[#047000] text-white mb-2">
+              Register
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#047000] text-white py-4">
+      <div class="container text-center">
+        <p>© 2024 Osten's Eco-Friendly Cooking Event</p>
+        <a href="#" class="text-white hover:text-gray-200">Website</a> |
+        <a href="#" class="text-white hover:text-gray-200">Facebook</a> |
+        <a href="#" class="text-white hover:text-gray-200">Instagram</a>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "6-C9C3xK9hqcYOJ56",
+        });
+      })();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/ba4b2e8aca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
